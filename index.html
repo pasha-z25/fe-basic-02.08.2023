@@ -9,9 +9,15 @@
   </head>
 
   <body>
-    <header></header>
+    <header class="header py-rem">
+      <div class="container">
+        <nav>
+          <a href="#">Home</a>
+        </nav>
+      </div>
+    </header>
     <main>
-      <section>
+      <section class="py-rem">
         <div class="container">
           <h1>Lesson template</h1>
           <img src="./images/nature.avif" alt="nature" width="500" />
@@ -24,7 +30,17 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer py-rem">
+      <div class="container">
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved
+        </p>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
