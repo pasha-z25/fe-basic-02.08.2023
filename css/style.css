@@ -1,8 +1,10 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --text-size: 16px;
-  --text-color: #353535;
+  --text-size: 14px;
+  --text-color: #333333;
+  --basic-color: #f13c6e;
+  --bg-color: #efefef;
 }
 
 * {
@@ -23,11 +25,18 @@ img {
   object-fit: cover;
 }
 
+input,
+button {
+  font: inherit;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: 1.428;
   font-weight: 400;
 }
 
@@ -65,3 +74,206 @@ h6 {
 .hidden {
   display: none !important;
 }
+
+.bg-light {
+  background-color: var(--bg-color);
+}
+
+.bg-primary {
+  background-color: var(--basic-color);
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-30 {
+  gap: 30px;
+}
+.gap-40 {
+  gap: 40px;
+}
+
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  min-width: 170px;
+  border-radius: 40px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+.btn.btn-white {
+  background-color: #ffffff;
+  border-color: var(--basic-color);
+}
+.btn.btn-red {
+  background-color: var(--basic-color);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn.btn-small {
+  min-width: 130px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 38px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.header .up-line {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 16.4px;
+}
+
+.header .center-line {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 18.75px;
+}
+.header .logo {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--basic-color);
+  text-transform: uppercase;
+}
+.header .down-line {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  border-top: 1px solid var(--bg-color);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.promo {
+  background: var(--basic-color) url('../images/main-bg.jpg') no-repeat
+    center/cover;
+  color: #fff;
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+.promo .text-wrapper {
+  max-width: 310px;
+}
+
+.promo .main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 50px;
+}
+
+.promo .description {
+  margin-bottom: 50px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.products {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.products .card {
+  width: 100%;
+  max-width: calc(25% - 90px / 4);
+  background-color: #fff;
+  padding: 25px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products .card .card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.products .card .description {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+.products .card .price {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.products .banners {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.products .banner {
+  width: 50%;
+  padding: 35px 45px 35px 40px;
+}
+.products .banner .title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+.products .banner .description {
+  margin-bottom: 25px;
+}
+.products .banner1 .text-wrap {
+  max-width: 250px;
+}
+.products .banner2 .text-wrap {
+  max-width: 150px;
+}
+.products .banner .form {
+  width: 100%;
+  max-width: 255px;
+}
+.products .banner .form input {
+  width: 100%;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 9px 15px;
+  color: var(--text-color);
+}
+.products .banner .form input::placeholder {
+  color: #c4c4c4;
+}
+.products .banner .form input:focus {
+  outline: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
